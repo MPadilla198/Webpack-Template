@@ -1,6 +1,24 @@
 # Webpack Template
 ## Getting Started
-To begin, go to `package.json` and update the fields `name`, `version`, `description` and `author`. Then, update `package-lock.json` to reflect the `name` and `version` values you input in `package.json` (__NOTE__: This will be done twice in the file: once at the top of the fields and again for the first package listed).
+To begin, go to `package.json` and update the fields `name`, `version`, `description` and `author`. 
+```
+{
+  "name": "webpack-template", <- UPDATE
+  "version": "1.0.0", <- UPDATE
+  "description": "", <- UPDATE
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack serve --config webpack.dev.js",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "keywords": [],
+  "author": "", <- UPDATE
+  ...
+}
+```
+Then, update `package-lock.json` to reflect the `name` and `version` values you input in `package.json` (__NOTE__: This will be done twice in the file: once at the top of the fields and again for the first package listed).
 ```
 {
   "name": "webpack-template", <- Update name here
