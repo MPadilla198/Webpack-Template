@@ -6,15 +6,6 @@ To begin, go to `package.json` and update the fields `name`, `version`, `descrip
   "name": "webpack-template", <- UPDATE
   "version": "1.0.0", <- UPDATE
   "description": "", <- UPDATE
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.prod.js",
-    "dev": "webpack serve --config webpack.dev.js",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
-  },
-  "keywords": [],
-  "author": "", <- UPDATE
   ...
 }
 ```
@@ -37,6 +28,8 @@ Then, update `package-lock.json` to reflect the `name` and `version` values you 
 ```
 
 ## Scripts
+First, run `npm install` to initialize npm libraries.
+ 
 To build, use `npm run build`.
 
 To deploy dev server, use `npm run dev`.
